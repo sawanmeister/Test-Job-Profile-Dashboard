@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BackToMyAccount } from "./components/BackToMyAccount";
+import { ProfileDetails } from "./components/ProfileDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto p-0 bg-white w-[95%] lg:w-[100%] shadow md:w-2xl">
+      {/* Back to My Account Component */}
+      <BackToMyAccount />
+      {/* Profile Details Component */}
+      <ProfileDetails />
     </div>
   );
 }
